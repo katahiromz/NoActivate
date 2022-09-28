@@ -3,6 +3,7 @@
 #include <commctrl.h>
 #include <tchar.h>
 #include <strsafe.h>
+#include <assert.h>
 
 BOOL OnInitDialog(HWND hwnd, HWND hwndFocus, LPARAM lParam)
 {
@@ -16,6 +17,12 @@ void OnCommand(HWND hwnd, int id, HWND hwndCtl, UINT codeNotify)
     case IDOK:
     case IDCANCEL:
         EndDialog(hwnd, id);
+        break;
+    case psh1:
+        assert(SetActiveWindow(hwnd));
+        break;
+    case psh2:
+        assert(SetForegroundWindow(hwnd));
         break;
     }
 }

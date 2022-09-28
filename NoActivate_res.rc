@@ -33,6 +33,8 @@ EXSTYLE WS_EX_NOACTIVATE | WS_EX_TOPMOST
 FONT 9, "MS Shell Dlg"
 {
     EDITTEXT edt1, 33, 21, 60, 14
+    PUSHBUTTON "psh1", psh1, 34, 55, 60, 14
+    PUSHBUTTON "psh2", psh2, 49, 77, 60, 14
 }
 
 //////////////////////////////////////////////////////////////////////////////
