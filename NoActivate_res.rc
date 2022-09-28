@@ -32,6 +32,7 @@ STYLE DS_CENTER | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
 EXSTYLE WS_EX_NOACTIVATE | WS_EX_TOPMOST
 FONT 9, "MS Shell Dlg"
 {
+    EDITTEXT edt1, 33, 21, 60, 14
 }
 
 //////////////////////////////////////////////////////////////////////////////
